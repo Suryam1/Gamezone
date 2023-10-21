@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="hangmanstyle.css">
+</head>
+<body>
+    <div class="bg-[#f4c531] w-full h-[48rem] flex justify-center items-center">
+        <div class="bg-white flex flex-col w-[40rem] h-fit justify-center items-center rounded-xl space-y-4">
+            <div class="text-2xl pt-3">
+                <p>Please select an Option</p>
+            </div>
+            <div class="space-y-4 py-6 text-xl">
+                <div class="space-x-6">
+                    <button class="choiceButton border-[3px] rounded-xl px-4 py-3 border-black" value="Fruits">Fruits</button>
+                    <button class="choiceButton border-[3px] rounded-xl px-4 py-3 border-black" value="Animals">Animals</button>
+                    <button class="choiceButton border-[3px] rounded-xl px-4 py-3 border-black" value="Countries">Countries</button>
+                    <button class="choiceButton border-[3px] rounded-xl px-4 py-3 border-black" value="Languages">Languages</button>
+                </div>
+                <div class="space-x-10">
+                    <button class="choiceButton border-[3px] rounded-xl px-4 py-3 border-black" value="Colors">Colors</button>
+                    <button class="choiceButton border-[3px] rounded-xl px-4 py-3 border-black" value="Sports">Sports</button>
+                    <button class="choiceButton border-[3px] rounded-xl px-4 py-3 border-black" value="Body">Body</button>
+                    <button class="choiceButton border-[3px] rounded-xl px-4 py-3 border-black" value="Days">Days</button>
+                </div>
+            </div>
+            <div class="inputAreaDiv flex-col justify-center items-center space-y-4 hidden">
+                <div class="generateKeyboard flex flex-row space-x-4 justify-center items-center flex-wrap px-10 space-y-4">
+                    <button class="boards px-2 py-2 border-[2px] rounded-lg text-xl mt-[1rem]" onclick="insertValues(this)">A</button>
+                    <button class="boards px-2 py-2 border-[2px] rounded-lg text-xl" onclick="insertValues(this)">B</button>
+                    <button class="boards px-2 py-2 border-[2px] rounded-lg text-xl" onclick="insertValues(this)">C</button>
+                    <button class="boards px-2 py-2 border-[2px] rounded-lg text-xl" onclick="insertValues(this)">D</button>
+                    <button class="boards px-2 py-2 border-[2px] rounded-lg text-xl" onclick="insertValues(this)">E</button>
+                    <button class="boards px-2 py-2 border-[2px] rounded-lg text-xl" onclick="insertValues(this)">F</button>
+                    <button class="boards px-2 py-2 border-[2px] rounded-lg text-xl" onclick="insertValues(this)">G</button>
+                    <button class="boards px-2 py-2 border-[2px] rounded-lg text-xl" onclick="insertValues(this)">H</button>
+                    <button class="boards px-2 py-2 border-[2px] rounded-lg text-xl" onclick="insertValues(this)">I</button>
+                    <button class="boards px-2 py-2 border-[2px] rounded-lg text-xl" onclick="insertValues(this)">J</button>
+                    <button class="boards px-2 py-2 border-[2px] rounded-lg text-xl" onclick="insertValues(this)">K</button>
+                    <button class="boards px-2 py-2 border-[2px] rounded-lg text-xl" onclick="insertValues(this)">L</button>
+                    <button class="boards px-2 py-2 border-[2px] rounded-lg text-xl" onclick="insertValues(this)">M</button>
+                    <button class="boards px-2 py-2 border-[2px] rounded-lg text-xl" onclick="insertValues(this)">N</button>
+                    <button class="boards px-2 py-2 border-[2px] rounded-lg text-xl" onclick="insertValues(this)">O</button>
+                    <button class="boards px-2 py-2 border-[2px] rounded-lg text-xl" onclick="insertValues(this)">P</button>
+                    <button class="boards px-2 py-2 border-[2px] rounded-lg text-xl" onclick="insertValues(this)">Q</button>
+                    <button class="boards px-2 py-2 border-[2px] rounded-lg text-xl" onclick="insertValues(this)">R</button>
+                    <button class="boards px-2 py-2 border-[2px] rounded-lg text-xl" onclick="insertValues(this)">S</button>
+                    <button class="boards px-2 py-2 border-[2px] rounded-lg text-xl" onclick="insertValues(this)">T</button>
+                    <button class="boards px-2 py-2 border-[2px] rounded-lg text-xl" onclick="insertValues(this)">U</button>
+                    <button class="boards px-2 py-2 border-[2px] rounded-lg text-xl" onclick="insertValues(this)">V</button>
+                    <button class="boards px-2 py-2 border-[2px] rounded-lg text-xl" onclick="insertValues(this)">W</button>
+                    <button class="boards px-2 py-2 border-[2px] rounded-lg text-xl" onclick="insertValues(this)">X</button>
+                    <button class="boards px-2 py-2 border-[2px] rounded-lg text-xl" onclick="insertValues(this)">Y</button>
+                    <button class="boards px-2 py-2 border-[2px] rounded-lg text-xl" onclick="insertValues(this)">Z</button>
+                </div>
+                <p class="user_input_area ">
+                    
+                </p>
+            </div>
+            <div class="pb-3">
+                <canvas class="canvas border-[2px] rounded-lg border-black ">
+
+                </canvas>
+            </div>
+        </div>
+        <div class="newgameWindow bg-white flex flex-col w-[40rem] h-[42rem] justify-center items-center rounded-xl absolute border-black border-[4px]">
+            <div class="flex flex-col justify-center items-center space-y-10">
+                <div class="announcement">
+
+                </div>
+                <div class="originalWord">
+
+                </div>
+                <button class="newGameButton px-6 py-4 border-[3px] border-black bg-[#f4c531] rounded-xl text-2xl" onclick="startResetGame()">New Game</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

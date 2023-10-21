@@ -141,13 +141,15 @@ window.addEventListener("DOMContentLoaded",()=>{
         })
         userPlayer="";
         computerPlayer="";
+        if(announcement.children[0].innerText!=="TIE"){
+            winning.forEach((val,idx)=>{
+                let x=document.querySelector(`#box${val}`);
+                console.log(x)
+                x.classList.remove(`hello`);
+                console.log(x);
+            })
+        }
         announcement.children[0].remove();
-        winning.forEach((val,idx)=>{
-            let x=document.querySelector(`#box${val}`);
-            console.log(x)
-            x.classList.remove(`hello`);
-            console.log(x);
-        })
         announcement.classList.add("hidden");
         announcement.classList.remove("flex");
         selectScreen.classList.remove("hidden");
