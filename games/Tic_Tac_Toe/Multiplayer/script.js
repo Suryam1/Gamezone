@@ -11,7 +11,7 @@ window.addEventListener("DOMContentLoaded",()=>{
     let isGameActive=true;
 
     const PLAYER_X_WON="PLAYER_X_WON";
-    const PLAYER_O_WON="PLAYER_O_WON"
+    const PLAYER_O_WON="PLAYER_O_WON";
 
     let winningConditiions=[
         [0,1,2],
@@ -40,7 +40,7 @@ window.addEventListener("DOMContentLoaded",()=>{
                 condition.forEach((val,idx)=>{
                     let x=document.querySelector(`#box${val}`);
                     console.log(x)
-                    x.classList.add(`bg-red-700`);
+                    x.classList.add(`hello`);
                     console.log(x);
                 })
                 announcement.classList.remove("hidden");
@@ -117,7 +117,7 @@ window.addEventListener("DOMContentLoaded",()=>{
         winning.forEach((val,idx)=>{
             let x=document.querySelector(`#box${val}`);
             console.log(x)
-            x.classList.remove(`bg-red-700`);
+            x.classList.remove(`hello`);
             console.log(x);
         })
         announcement.classList.add("hidden");
