@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="rpsStyle.css">
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+    <div class="bg-white flex justify-center items-center">
+        <div class="w-[50rem] ">
+            <div class="flex flex-row justify-between items-center pt-16 font-semibold">
+                <div class="flex flex-col justify-center items-center px-6 py-2">
+                    <p class="text-2xl">Player Wins</p>
+                    <p class="text-xl playerCounterDiv">0</p>
+                </div>
+                <div class="flex flex-col justify-center items-center px-6 py-2">
+                    <p class="text-2xl">Tie</p>
+                    <p class="text-xl tieCounterDiv">0</p>
+                </div>
+                <div class="flex flex-col justify-center items-center px-6 py-2">
+                    <p class="text-2xl">Computer Wins</p>
+                    <p class="text-xl computerCounterDiv">0</p>
+                </div>
+            </div>
+            <div class="gameDiv flex-col justify-center items-center pt-16 hidden">
+                <div class="announcement text-5xl">
+                    <p>Choose an Option</p>
+                </div>
+                <div class="flex flex-row justify-between items-center">
+                    <img src="./assets/rock.png" class="rotateYes leftSide">
+                    <img src="./assets/rock.png" class="rightSide"/>
+                </div>
+                <div class="flex flex-row justify-center items-center space-x-24 text-3xl pb-10">
+                    <button class="bg-[#2D7560] px-5 py-2 rounded-lg" onclick="playGame(this)">Rock</button>
+                    <button class="bg-[#2D7560] px-5 py-2 rounded-lg" onclick="playGame(this)">Paper</button>
+                    <button class="bg-[#2D7560] px-5 py-2 rounded-lg" onclick="playGame(this)">Scissors</button>
+                </div>
+            </div>
+            <div class="letsPlayDiv flex flex-col justify-center items-center pt-16 absolute w-[50rem] h-[30rem] top-[140px] space-y-24"> 
+                <div>
+                    <p class="text-5xl font-bold">Rock Paper and Scissors</p>
+                </div>
+                <div>
+                    <button class="letsPlayButton bg-[#2D7560] px-5 py-2 rounded-lg text-3xl">Let's Play</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
