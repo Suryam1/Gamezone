@@ -1,0 +1,16 @@
+.playBoard{
+    display: grid;
+    grid-template: repeat(30,1fr)/repeat(30,1fr);
+}
+
+.food{
+    background: #FF003D;
+}
+
+.snakeHead{
+    background: #60CBFF;
+}
+
+.icons{
+    width: calc(100% / 4);
+}
