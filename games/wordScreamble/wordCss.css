@@ -1,0 +1,13 @@
+.content{
+    margin: 25px 20px 35px;
+}
+.word{
+    text-transform: uppercase;
+    letter-spacing: 24px;
+}
+.details{
+    margin: 25px 0 20px;
+}
+.buttons button{
+    width : calc(100% / 2 - 8px);
+}

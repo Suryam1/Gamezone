@@ -1,0 +1,10 @@
+.content{
+    margin: 25px 25px 35px;
+}
+
+.details{
+    margin: 20px 0 25px;
+}
+.inputs input{
+    text-transform: uppercase;
+}

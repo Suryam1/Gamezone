@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="./wordsStyle.css">
+</head>
+<body>
+    <div class="flex justify-center items-center min-h-[100vh] bg-[#1bb295]">
+        <div class="container w-[450px] bg-[#fff] rounded-lg">
+           <h1 class="text-base font-medium py-5 px-6 border-b border-[#ccc]">Guess the word</h1> 
+           <div class="content">
+                <input type="text" class="typing-input z-[-999] absolute opacity-0" maxlength="1">
+                <div class="inputs flex justify-center flex-wrap">
+                </div>
+                <div class="details text-xl space-y-3">
+                    <p class="hint">Hint: <span></span></p>
+                    <p class="guessRemaining">Remaining Guesses: <span></span></p>
+                    <p class="wrongWords">Wrong letters: <span></span></p>
+                </div>
+                <button class="resetGame w-full text-lg py-4 text-[#fff] bg-[#1bb295] rounded-md">
+                    Reset Game
+                </button>
+           </div>
+        </div>
+    </div>
+    <script src="./words.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
