@@ -40,7 +40,7 @@ let options = {
     ],
     Languages: ["English", "Mandarin", "Hindi", "Spanish", "French", "Arabic", "Bengali", "Russian", "Portuguese", "Indonesian"],
   
-    Colors: ["Red", "Blue", "Green", "White", "Black", "Voilet", "Brown", "Grey", "Pink"],
+    Colors: ["Red", "Blue", "Green", "White", "Black", "Violet", "Brown", "Grey", "Pink"],
     Sports: ["Football", "Badminton", "Cricket", "Hockey", "Tennis", "Baseball", "Golf"],
     Body: ["Eyes", "Ears", "Neck", "Hands", "Legs", "Nose", "Brain"],
     Days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]

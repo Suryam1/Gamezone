@@ -21,7 +21,7 @@ const randomWordGenerator =()=>{
     hintField.innerText=randomWordObject.hint;
     guessRemainingField.innerText=maxGuesses;
     for (let i = 0; i < word.length; i++) {
-        inputHtml +=`<input type="text" disabled class="h-14 w-14 m-1 ml-0 rounded-md border border-[#b5b5b5] text-base font-medium text-center text-[#1bb295]">`;
+        inputHtml +=`<input type="text" disabled class="letterInputs">`;
     }
     inputs.innerHTML=inputHtml;
 }

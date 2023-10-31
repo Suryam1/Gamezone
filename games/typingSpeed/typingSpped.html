@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="./typing.css">
+    <link rel="shortcut icon" href="../../assest/typing.webp" type="image/x-icon">
+</head>
+<body>
+    <div class="flex justify-center items-center min-h-[100vh] bg-[#17a2b8]">
+        <div class="container bg-[#fff] w-[770px] rounded-xl p-9">
+            <input type="text" class="inputArea">
+            <div class="content-box border border-[#ccc] rounded-lg">
+                <div class="typingText text-xl text-justify max-h-[255px] overflow-y-auto">
+                    <p></p>
+                </div>
+                <div class="content flex justify-between mt-4 py-3 border-t border-[#ccc] items-center">
+                    <ul class="resultDetails flex justify-between">
+                        <li class="time flex h-6 items-center">
+                            <p class="text-[19px]">Time Left:</p>
+                            <span class="block ml-2 text-xl"><b class="font-medium">60</b>s</span>
+                        </li>
+                        <li class="mistakes flex">
+                            <p class="text-[19px]">Mistakes:</p>
+                            <span class="block ml-2 text-xl">0</span>
+                        </li>
+                        <li class="wpm flex">
+                            <p class="text-[19px]">WPM:</p>
+                            <span class="block ml-2 text-xl">0</span>
+                        </li>
+                        <li class="cpm flex">
+                            <p class="text-[19px]">CPM:</p>
+                            <span class="block ml-2 text-xl">0</span>
+                        </li>
+                    </ul>
+                    <button class="tryAgainButton w-[105px] bg-[#17a2b8] py-2 text-[#fff] cursor-pointer text-base rounded">Try Again</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./paragraphs.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
