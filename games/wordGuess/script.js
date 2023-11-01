@@ -12,6 +12,7 @@ let maxGuesses;
 
 
 const randomWordGenerator =()=>{
+    wrongWords.innerHTML="";
     let randomWordObject=wordList[Math.floor(Math.random()*wordList.length)];
     word=randomWordObject.word;
     let inputHtml="";
